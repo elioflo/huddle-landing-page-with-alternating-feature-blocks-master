@@ -1,0 +1,14 @@
+.btn {
+  background-color: var(--primary-pink);
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: .8rem;
+  padding: .75rem 3.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 .75rem rgba(black, .2);
+  
+  &--cta {
+    font-size: .62rem;
+  }
+}

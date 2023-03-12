@@ -1,0 +1,21 @@
+.cta {
+  width: calc(100% - 1.25rem);
+  margin: 0 auto;
+  padding-top: 2.75rem;
+  padding-bottom: 3.25rem;
+  text-align: center;
+  box-shadow: 0 0 .75rem rgba(black, .1);
+  border-radius: 1rem;
+  margin-top: 2.5rem;
+  position: relative;
+  transform: translateY(40%);
+  background-color: white;
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    color: var(--neutral-very-dark-cyan);
+    font-size: 1.14rem;
+    margin-bottom: 2.25rem;
+    margin-top: 0;
+  }
+}
