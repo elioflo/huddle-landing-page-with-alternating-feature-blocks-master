@@ -350,6 +350,9 @@ template {
   margin-bottom: 3rem;
   line-height: 1.5;
 }
+.header__title, .header__img, .header__text {
+  max-width: 40rem;
+}
 
 .nav {
   width: calc(100% - 2.5rem);
@@ -357,6 +360,7 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 40rem;
 }
 .nav__logo {
   width: 6rem;
@@ -394,15 +398,19 @@ template {
   box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   text-align: center;
-  padding-top: 3.5rem;
+  padding-top: 4rem;
   min-height: 23.5rem;
-  padding-bottom: 1.75rem;
+  padding-bottom: 2.5rem;
+  max-width: 21rem;
 }
 .card:first-of-type {
   margin-top: 3.5rem;
 }
 .card:last-of-type {
   margin-bottom: 3.5rem;
+}
+.card:last-of-type__text {
+  width: calc(100% - 5rem);
 }
 .card__img {
   width: calc(100% - 6rem);
@@ -422,8 +430,40 @@ template {
   font-size: 0.9rem;
   color: var(--neutral-grayish-blue);
 }
-.card__text:last-of-type {
-  width: calc(100% - 5rem);
+@media (min-width: 640px) {
+  .card {
+    width: calc(100% - 4.5rem);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-right: 2rem;
+    min-height: 16.5rem;
+    max-width: 40rem;
+  }
+  .card__content {
+    width: 45%;
+    text-align: left;
+    margin-left: auto;
+  }
+  .card--reversed {
+    flex-direction: row-reverse;
+  }
+  .card__img {
+    width: 35%;
+    object-fit: contain;
+    margin: 0;
+    margin-left: auto;
+  }
+  .card__title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .card__text {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.75rem;
+    width: 100%;
+  }
 }
 
 .cta {
@@ -438,6 +478,7 @@ template {
   position: relative;
   transform: translateY(40%);
   background-color: white;
+  max-width: 25rem;
 }
 .cta__title {
   font-family: "Poppins", sans-serif;
@@ -453,16 +494,18 @@ template {
   padding-bottom: 2rem;
   color: white;
 }
-.footer__logo, .footer__data, .footer__link {
+.footer__container, .footer__data, .footer__link {
   display: block;
-  margin-left: 0.75rem;
+  width: calc(100% - 2.5rem);
+  margin: 0 auto;
+  max-width: 40rem;
 }
 .footer__logo {
   width: 10rem;
 }
 .footer__data {
   margin-top: 1.5rem;
-  display: inline-flex;
+  display: flex;
   gap: 1rem;
   align-items: center;
   line-height: 1.5;
